@@ -30,7 +30,7 @@ crossorigin="anonymous"/>
     
 <title>Tasky</title>
 </head>
-<body>
+<body onload="loadInitialTaskCards()">
   <!--Modal-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -71,9 +71,12 @@ crossorigin="anonymous"/>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveChanges()"
-          >Save changes</button>
+          >Save changes
+        </button>
         </div>
       </div>
     </div>
